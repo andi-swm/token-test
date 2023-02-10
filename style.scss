@@ -4,7 +4,18 @@
 
 @import "variables";
 
-button {
+.example__btn {
 	background-color: $bg;
 	color: white;
+	padding: 0.5rem 1.5rem;
+	border-radius: 5px;
+	margin-top: 0.5rem;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	transition: background-color 0.3s ease-in-out;
+
+	&:hover {
+		background: darken($bg, 20%);
+	}
 }
