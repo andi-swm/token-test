@@ -1,0 +1,12 @@
+{
+  "bg": {
+    "value": "#2a63c5",
+    "type": "color"
+  },
+  "tokenSetOrder": {
+    "0": {
+      "value": "global",
+      "type": "other"
+    }
+  }
+}
