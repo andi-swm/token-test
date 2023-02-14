@@ -5,14 +5,27 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "token-transformer tokens.json output.json && style-dictionary build && vite build",
+    "build": "token-transformer tokens.json output.json && style-dictionary build && build-storybook && vite build",
     "preview": "vite preview",
-    "style": "style-dictionary build"
+    "style": "style-dictionary build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-webpack4": "^6.5.16",
+    "@storybook/html": "^6.5.16",
+    "@storybook/manager-webpack4": "^6.5.16",
+    "@storybook/testing-library": "^0.0.13",
     "autoprefixer": "^10.4.13",
+    "babel-loader": "^8.3.0",
     "postcss": "^8.4.21",
     "sass": "^1.58.0",
+    "storybook-addon-sass-postcss": "^0.1.3",
     "style-dictionary": "^3.7.2",
     "tailwindcss": "^3.2.6",
     "vite": "^4.1.0"
